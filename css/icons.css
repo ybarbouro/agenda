@@ -1,0 +1,25 @@
+.Icon {
+  /* Allows sizing by changing the icon’s font-size */
+  width: 7em; height: 7em;
+  /* Nice visual alignment for icons alongside text */
+  vertical-align: -0.15em;
+  /* Default path fill = value of the color property */
+  fill: #97cd76;
+  /* Paths and strokes that overflow the viewBox can show in IE.
+     If you use normalize.css, it already sets this. */
+  overflow: hidden;
+  position:relative;
+  margin-left: 27px;
+}
+
+.Icon--house, .Icon--compu, .Icon--tel {
+  stroke: #C5E1A5;
+  stroke-width: 2%;
+  stroke-linejoin: round;
+}
+.Icon--neven {
+  stroke: rgba(186, 218, 85, 0.6);
+  stroke-width: 2%;
+  stroke-linejoin: round;
+  fill:none;
+}

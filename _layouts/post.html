@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1371541719526496',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<section class="section" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="container">
+
+<div class="tile is-ancestor">
+  <div class="tile is-8">
+
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="subtitle post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+        <div class="content is-medium">
+          <p class="post-content"> {{ content }}</p>
+          <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
+        </div>
+
+        <p class="title">Comentarios</p>
+        <p class="subtitle">Piensa bien antes de enviarlo</p>
+        <div class="content">
+
+          <div class="comments"></div>
+            <h3 class="subtitle is-3">Deja tu comentario</h3>
+                <form id="comment">
+                  <label class="label" for="message">Mensaje</label>
+                  <textarea class="textarea" id="message"></textarea>
+
+                  <label class="label" for="name">Nombre</label>
+                  <input class="input form-input" type="text" id="name">
+
+                  <label class="label" for="email">Email</label>
+                  <input class="input form-input" type="text" id="email">
+
+                  <input  class="button is-danger" type="submit" value="Enviar comentario">
+
+                </form>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="tile is-vertical is-4 is-parent">
+
+      {% for post in site.posts limit: 3 %}
+
+    <div class="tile is-child box">
+      <div class="content">
+        <p class="title">{{ post.title }}</p>
+        <p class="subtitle">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <div class="content">
+            {{ post.excerpt }}
+        </div>
+        		<a class="button is-success is-outlined" href="{{ post.url | prepend: site.baseurl }}">Leer todo</a>
+      </div>
+    </div>
+
+      	{% endfor %}
+
+  </div>
+</div>
+
+</div>
+</section>

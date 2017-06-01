@@ -1,0 +1,67 @@
+<footer class="footer bg-subtle">
+
+  <div class="container">
+
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-3">
+        <figure>
+          <img src="img/desk.svg" width="205" style="float:left;"/>
+        </figure>
+        <div style="clear:both;">
+          <h2 class="oswald">{{ site.title }}</h2>
+          <p>{{ site.description }}</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <p><strong>Museo Municipal de Guayaquil</strong>
+          </p>
+          <p><i class="fa fa-phone"></i>&emsp;259 4800 ext. 7402</p>
+          <p><i class="fa fa-bank"></i>&emsp;Sucre entre Chile y Pedro Carbo</p >
+          <p><i class="fa fa-bus"></i>&emsp;Parada Metrovia más cercana: Biblioteca Municipal</p>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+
+        <ul class="social-media-list">
+          <li>Diseño web:</li>
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="columns is-mobile">
+    <div class="column is-half is-offset-one-quarter">
+
+    <nav >
+    <div class="nav-center">
+       <a class="nav-item" href="https://www.github.com"><img style="width:48px"  src="/img/github-logo.svg"/></a>&nbsp;&nbsp;
+       <a class="nav-item" href="http://jekyllrb.com"><img style="width:85px;" src="/img/jekyll-logo.svg" /></a>&nbsp;&nbsp;
+       <a class="nav-item" href="http://bulma.io"><img style="width:100px;" src="/img/bulma-logo.png"/></a>
+    </div>
+    </nav>
+    <div class="alignCenter">
+      <a href="#">
+        <small>&copy; Programa Museo, Arte y Ciudad 2017.</small>
+      </a>
+    </div>
+
+     </div>
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,73 @@
+.comment {
+  background-color: #aeb1b5;
+  padding: 20px 30px 10px 50px;
+  color: #fff;
+  position: relative;
+  font-size: 1.3rem;
+  margin: 15px 0 10px 0;
+  border-radius: 3px;
+}
+
+.comment h4 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 143px;
+  font-weight:bolder;
+}
+
+.comment p {
+  padding: 15px 0;
+  margin: 0;
+  top: 40px;
+  color: #fffff8;
+  line-height: 1em;
+}
+.comment span.date {
+  position: absolute;
+  top: 64px;
+  left: 142px;
+}
+
+.comment .profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+
+hr {
+  border: 1px solid #eee;
+  margin: 60px 0;
+}
+
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 250px;
+  line-height: 1.5em;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+label {
+  margin: 30px 0 10px 0;
+  display: block;
+}
+
+input[type="submit"] {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+}
+
+.back-img {
+  background-image: url(../img/sparks.jpg);
+  background-size: cover;
+}

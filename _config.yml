@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Agenda Semanal
+email: fernanz@me.com
+description: > # this means to ignore newlines until "baseurl:"
+  Programa oficial de eventos de la Dirección de Cultura de la M. I. Municipalidad de Guayaquil.
+baseurl: "/agenda"
+url: "https://www.salondejulio/agenda/" # the base hostname & protocol for your site
+twitter_username: fernanz
+github_username:  fernanz
+
+# Build settings
+markdown: kramdown
