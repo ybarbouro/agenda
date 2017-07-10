@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Oswald');
 
 .escudo-bg {
-	background:
-		linear-gradient(purple 0%, red 90%),
-		linear-gradient( to right, purple 0%, yellow 90%),
-	    url('../img/escudo-w.svg') 30px,
-	    url('../img/escudo-w.svg') 20px;
+	background:url('../img/escudo-w.svg');
 	background-blend-mode: screen, difference, lighten;
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: contain;
 	width:100%;
 	min-height: 300px;
-	margin: 0;
-	border-radius: 5px;
+	margin: 0 30px 0 30px;
 	padding: 20px;
 }
 
